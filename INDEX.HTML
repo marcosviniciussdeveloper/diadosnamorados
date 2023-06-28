@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        /* Estilos para o elemento de animação */
+        #heart {
+          font-size: 100px;
+          color: red;
+          animation: heartbeat 1s infinite;
+        }
+    
+        
+        @keyframes heartbeat {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.2);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Quer namorar comigo?</h1>
+      <div id="heart">&hearts;</div>
+    
+      <script>
+        // Event listener para responder ao clique no coração
+        var heart = document.getElementById("heart");
+        heart.addEventListener("click", function() {
+          alert("Estamos namorando!");
+        });
+      </script>
+    </body>
+    </html>
+     
+    
+</head>
+
+</html>
